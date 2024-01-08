@@ -53,7 +53,9 @@ h1,h2,h3,h4,h5,h6{
 .sub_heading{
     font-size: 24px;
 }
-
+.section_title{
+    font-size: 48px;
+}
 
 
     /* Header */
@@ -197,7 +199,16 @@ margin-bottom: 16px;
 .holiday_sale{
     margin-block: 100px;
     text-align: center;
-    padding-inline: 300px;
+    /* padding-bottom: 600px; */
+    background-image: url('../image/Rectangle\ 2.png');
+     background-repeat: no-repeat; 
+    background-blend-mode: overlay;
+    background-position: bottom, left,right;
+    background-size: 100% 200px,60%,20px,20px;
+} 
+.holiday_sale_content{
+    padding-inline: 200px;
+    margin-bottom: 50px;
 }
 
 .holiday_sale .section_title,.holiday_sale span{
@@ -205,4 +216,50 @@ margin-bottom: 16px;
 font-size: 90px;
 margin-bottom: 20px;
 }
+.image_column_container{
+  
+    display: flex;
+    justify-content:space-between;
+    gap: 50px;
+    
+}
+.holiday_discount_img .column{
+    
+    width: 200px;
+}
+.right{
+    margin-bottom: 200px;
+}
 
+
+/*   Portfoio Section */
+
+.portfolio{
+    margin-bottom: 100px;
+}
+
+
+.portfolio_text{
+    padding-right: 580px;
+    padding-left: 40px;
+}
+
+.portfolio .section_desc{
+    margin-block: 20px;
+}
+
+.portfolio_image_container .row{
+    padding-inline: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+.item_img{
+    width: 100%;
+    height: 40vh;
+    transition: transform .3s linear;
+}
+.item_img:hover{
+transform: scale(1.1);
+}
