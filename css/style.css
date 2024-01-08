@@ -154,7 +154,10 @@ margin-bottom: 16px;
 /*  Venue Section */
 
 .venue{
+
+    background-image: linear-gradient(hsla(0, 100%, 50%, 10%) ,white 70%);
     margin-block: 120px;
+    padding-block: 120px;
     text-align: center;
 }
 .venue_text{
@@ -285,12 +288,16 @@ transform: scale(1.1);
     font-size: 1rem;
     border-radius:   100px 0 0 100px ;
     border: none;
-    /* background-color: rgba(240, 255, 255, 0.321); */
+    background-color: rgba(240, 255, 255, 0.321);
+    transition: all .3s ease-in-out;
+    
 
 }
 
 .newsletter_input:focus{
     outline:2px solid red;
+    outline-offset: -2px;
+    background-color: white;
 }
 .subscribe_btn{
     font-size: 1rem;
@@ -325,21 +332,30 @@ footer .column{
     content: '';
     display: block;
     position: relative;
-    transform: translate(-39vw );
+    transform: translate(-40vw );
     width: 100vw;
     height:2px;
-    background-color: #ffffff;
+    background-color: #ffffff63;
+    margin: 20px;
 }
 .social_icon_container::before{
     content: '';
     display: block;
     position: relative;
-    transform: translate(-39vw);
+    transform: translate(-40vw);
     width: 100vw;
     height:2px;
-    background-color: #ffffff;
+    background-color: #ffffff63;
+    margin: 20px;
 }
 .address{
-    margin-bottom: 00px;
+    width: 30ch;
+    margin-bottom: 200px;
+}
+.contact img,.contact p{
+margin-right: 10px;
 }
 
+.unsubscribe{
+    margin: 180px 0 0  320px;
+}
