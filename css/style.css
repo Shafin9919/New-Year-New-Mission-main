@@ -11,6 +11,8 @@
 
       /* Shared Style */
 body{
+    max-width: 1920px;
+    margin: 0  auto;
     width: 100vw;
     color:rgba(7, 2, 17, 0.60);
     font-family: 'Inter', sans-serif;
@@ -90,12 +92,12 @@ margin-bottom: 16px;
 
 .new_year_discount{
     margin-block: 100px;
-    height:750px ;
+    height:min(750px,88.889vh) ;
     text-align: center;
     background-image: url(../image/New\ Year\ Photo.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 50%;
+    background-size: 40%;
 }
 
 .new_year_discount .highlight_text{
@@ -270,7 +272,7 @@ margin-bottom: 20px;
     border-radius: 20px;
     width: 31.45vw;
     height: 40vh;
-    transition: transform .3s linear;
+    transition: all .3s linear;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.193);
 }
 .item_img:hover{
