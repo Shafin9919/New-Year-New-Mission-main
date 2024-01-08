@@ -11,6 +11,7 @@
 
       /* Shared Style */
 body{
+    width: 100vw;
     color:rgba(7, 2, 17, 0.60);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
@@ -114,12 +115,12 @@ margin-bottom: 16px;
 
 .midnight_party{
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
     /* gap: 120px; */
     align-items: center;
     color: azure;
     margin-block: 50px;
-    padding: 80px 100px;
+    padding: 100px 100px;
     background-image: url(../image/Vectorrr.png), linear-gradient(to right, black ,  rgba(255, 255, 255, 0));
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -131,8 +132,10 @@ margin-bottom: 16px;
     padding-right:20px ;
     }
     .img_year{
-       width: 45%;
-       padding-right: 60px;
+       width: min(50%, 800px);
+       /* padding-right: 60px; */
+       
+       
     }
 .midnight_party .section_title{
     font-size: 64px;  
@@ -228,10 +231,11 @@ margin-bottom: 20px;
     gap: 50px;
     
 }
-.holiday_discount_img .column{
+.holiday_discount_img{
     
-    width: 200px;
+    width: max(40vw,300px);
 }
+
 .right{
     margin-bottom: 200px;
 }
@@ -261,7 +265,7 @@ margin-bottom: 20px;
     gap: 15px;
 }
 .item_img{
-    width: 100%;
+    width: 31.45vw;
     height: 40vh;
     transition: transform .3s linear;
 }
@@ -328,20 +332,12 @@ footer .column{
     position: relative;
     
 }
-.social_icon_container::after{
-    content: '';
-    display: block;
-    position: relative;
-    transform: translate(-40vw );
-    width: 100vw;
-    height:2px;
-    background-color: #ffffff63;
-    margin: 20px;
-}
+
 .social_icon_img{
     cursor: pointer;
     transition: transform .1s linear;
     margin-right: 10px;
+    width: min(3.4vw,64px);
 }
 .social_icon_img:hover{
     transform: scale(1.2);
@@ -351,6 +347,16 @@ footer .column{
     display: block;
     position: relative;
     transform: translate(-40vw);
+    width: 100vw;
+    height:2px;
+    background-color: #ffffff63;
+    margin: 20px;
+}
+.social_icon_container::after{
+    content: '';
+    display: block;
+    position: relative;
+    transform: translate(-40vw );
     width: 100vw;
     height:2px;
     background-color: #ffffff63;
@@ -367,3 +373,4 @@ margin-right: 10px;
 .unsubscribe{
     margin: 180px 0 0  320px;
 }
+
