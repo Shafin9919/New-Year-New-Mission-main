@@ -65,8 +65,8 @@ h1,h2,h3,h4,h5,h6{
 
 #header{
 
-    background-image:linear-gradient(to bottom ,rgba(7, 2, 17, 0.60) 55%, white),url(../image/Banner\ Image.png) ;
-    
+    background-image:linear-gradient(to bottom ,rgba(7, 2, 17, .6) 55%, white ),url(../image/Banner\ Image.png) ;
+    height: 97vh;
     background-blend-mode:multiply;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -142,6 +142,7 @@ margin-bottom: 16px;
     margin-bottom: 20px;
 }
 .midnight_party .section_desc{
+    width: 75ch;
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 30px;
@@ -211,8 +212,8 @@ margin-bottom: 16px;
     background-image: url('../image/Rectangle\ 2.png');
      background-repeat: no-repeat; 
     background-blend-mode: overlay;
-    background-position: bottom, left,right;
-    background-size: 100% 200px,60%,20px,20px;
+    background-position: bottom;
+    background-size: 150vw 200px;
 } 
 .holiday_sale_content{
     padding-inline: 200px;
@@ -228,12 +229,12 @@ margin-bottom: 20px;
   
     display: flex;
     justify-content:space-between;
-    gap: 50px;
+    /* gap: 50px; */
     
 }
 .holiday_discount_img{
     
-    width: max(40vw,300px);
+    width: max(45vw,300px);
 }
 
 .right{
@@ -254,7 +255,8 @@ margin-bottom: 20px;
 }
 
 .portfolio .section_desc{
-    margin-block: 20px;
+    width: 60ch;
+    margin-block: 40px;
 }
 
 .portfolio_image_container .row{
@@ -265,11 +267,15 @@ margin-bottom: 20px;
     gap: 15px;
 }
 .item_img{
+    border-radius: 20px;
     width: 31.45vw;
     height: 40vh;
     transition: transform .3s linear;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.193);
 }
 .item_img:hover{
+    box-shadow: none;
+    filter:drop-shadow(black 0px 0px 20px );
 transform: scale(1.1);
 }
 
@@ -341,7 +347,7 @@ footer .row{
     width: 20%;
     /* padding: 80px; */
     position: relative;
-    
+   
 }
 
 .social_icon_img{
