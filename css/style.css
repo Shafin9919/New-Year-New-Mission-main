@@ -13,6 +13,7 @@
 body{
     color:rgba(7, 2, 17, 0.60);
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }  
 a{
     display: inline-block;
@@ -31,7 +32,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .button{
     font-size: 20px;
-    /* border: none; */
+    border: none;
     padding: 10px 20px;
     color: white;
     transition: all .1s linear;
@@ -55,6 +56,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .section_title{
     font-size: 48px;
+    font-weight: 700;
 }
 
 
@@ -235,7 +237,7 @@ margin-bottom: 20px;
 /*   Portfoio Section */
 
 .portfolio{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 
@@ -263,3 +265,81 @@ margin-bottom: 20px;
 .item_img:hover{
 transform: scale(1.1);
 }
+
+/* Newsletter Section */
+
+.newsletter{
+    background-color: rgba(0, 0, 0, 0.077);
+    text-align: center;
+    padding: 80px  200px;
+    margin-bottom: 80px
+}
+.newsletter p{
+    margin: 20px auto;
+   width: 60ch;
+}
+
+.newsletter_input{
+    width: 300px;
+    padding: 8px 30px;
+    font-size: 1rem;
+    border-radius:   100px 0 0 100px ;
+    border: none;
+    /* background-color: rgba(240, 255, 255, 0.321); */
+
+}
+
+.newsletter_input:focus{
+    outline:2px solid red;
+}
+.subscribe_btn{
+    font-size: 1rem;
+    padding: 8px 30px;
+    border-radius:  0  100px  100px 0;
+}
+
+
+
+/* Footer */
+
+
+footer{
+    height: 400px;
+    padding: 60px 10px;
+    color: azure;
+    background-color:#070211 ;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+footer .column{
+    width: 33.33%;
+}
+
+.social_icon_container{
+    padding: 80px;
+    position: relative;
+    
+}
+.social_icon_container::after{
+    content: '';
+    display: block;
+    position: relative;
+    transform: translate(-39vw );
+    width: 100vw;
+    height:2px;
+    background-color: #ffffff;
+}
+.social_icon_container::before{
+    content: '';
+    display: block;
+    position: relative;
+    transform: translate(-39vw);
+    width: 100vw;
+    height:2px;
+    background-color: #ffffff;
+}
+.address{
+    margin-bottom: 00px;
+}
+
