@@ -338,6 +338,14 @@ footer .column{
     background-color: #ffffff63;
     margin: 20px;
 }
+.social_icon_img{
+    cursor: pointer;
+    transition: transform .1s linear;
+    margin-right: 10px;
+}
+.social_icon_img:hover{
+    transform: scale(1.2);
+}
 .social_icon_container::before{
     content: '';
     display: block;
